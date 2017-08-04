@@ -13,6 +13,13 @@ var timeOutCount = 0;
 var answersOne = ["Erica", "Diane", "Jessica", "Bojack"];
 var answersTwo = ["Improv Comedy", "Scientology", "Latin Kings", "Children of God"];
 var answersThree = ["Muffins", "Bag of Mulch", "TV Show Idea", "Wallet"];
+var answersFour = ["Suck a dick dumb shits!", "Wubba Lubba Dub Dub!", "That's too much man!", "Neigh Way Jose!"];
+var answersFive = ["Horsin Around", "The BoJack Horseman Show", "Secretariat", "Jelly Beans"];
+var answersSix = ["Sextina Aquafina", "Jessica Biel", "Naomi Watts", "Kitty Minaj"];
+var answersSeven = ["Actress", "Writer", "Social Media Coordinator", "Starbucks Barista"];
+var answersEight = ["Wanda Pierce", "Cameron Crowe", "Hank Hippopoulus", "Mr. Peanutbutter"];
+var answersNine = ["Boat", "Home", "Baby", "Restaurant"];
+var answersTen = ["16", "4", "none", "1"];
 
 var q1 = {
 	question: 		"What is the name of Mr.Peanutbutter's mysterious friend who is not	allowed to vote in national elections?",
@@ -41,7 +48,70 @@ var q3 = {
 	textIfTimeOut: 	"Time out! You need to speed up! The correct answer is 'Muffins'."
 };
 
-var quizArray = [q1, q2, q3];
+var q4 = {
+	question: 		"What is Sarah Lynn's new catch-phrase?",
+	answerChoices: 	answersFour,
+	gif: 			"assets/images/catch-phrase.gif",
+	textIfWrong: 	"Wrong! The correct answer is 'Suck a dick dumb shits!'.",
+	textIfRight: 	"Correct! LOL!",
+	textIfTimeOut: 	"Time out! You need to speed up! The correct answer is 'Suck a dick dumb shits'."	
+}
+
+var q5 = {
+	question: 		"What family show is BoJack Horseman known for?",
+	answerChoices: 	answersFive,
+	gif: 			"assets/images/bojack.gif",
+	textIfWrong: 	"Wrong! The correct answer is 'Horsin Around'.",
+	textIfRight: 	"Correct! Horsin around was a god damn riot!",
+	textIfTimeOut: 	"Time out! You need to speed up! The correct answer is 'Horsin Around'."	
+}
+
+var q6 = {
+	question: 		"What celebrity did Princess Carolyn help fake an abortion for?",
+	answerChoices: 	answersSix,
+	gif: 			"assets/images/sextina.gif",
+	textIfWrong: 	"Wrong! The correct answer is 'Sextina Aquafina'.",
+	textIfRight: 	"Correct! Get dat Fetus, Kill dat Fetus!",
+	textIfTimeOut: 	"Time out! You need to speed up! The correct answer is 'Sextina Aquafina'."	
+}
+
+var q7 = {
+	question: 		"Which of the following jobs has Diane Nguyen not had?",
+	answerChoices: 	answersSeven,
+	gif: 			"assets/images/diane.gif",
+	textIfWrong: 	"Wrong! The correct answer is 'Actress'.",
+	textIfRight: 	"Correct! Diane, Diane, Diane.",
+	textIfTimeOut: 	"Time out! You need to speed up! The correct answer is 'Actress'."	
+}
+
+var q8 = {
+	question: 		"Who from the show was in a 30 year coma?",
+	answerChoices: 	answersEight,
+	gif: 			"assets/images/wanda.gif",
+	textIfWrong: 	"Wrong! The correct answer is 'Wanda Pierce'.",
+	textIfRight: 	"Correct! Some things take time.",
+	textIfTimeOut: 	"Time out! You need to speed up! The correct answer is 'Wanda Pierce'."	
+}
+
+var q9 = {
+	question: 		"What big purchase does BoJack make during his visit to Tesuque, New Mexico?",
+	answerChoices: 	answersNine,
+	gif: 			"assets/images/awesome.gif",
+	textIfWrong: 	"Wrong! The correct answer is 'Boat'.",
+	textIfRight: 	"Correct! She's a good girl... or is she a bad girl?",
+	textIfTimeOut: 	"Time out! You need to speed up! The correct answer is 'Boat'."	
+}
+
+var q10 = {
+	question: 		"What is the adequate amount of locos?",
+	answerChoices: 	answersTen,
+	gif: 			"assets/images/locos.gif",
+	textIfWrong: 	"Wrong! The correct answer is '16'.",
+	textIfRight: 	"Correct! That's four 4Locos.",
+	textIfTimeOut: 	"Time out! You need to speed up! The correct answer is '16'."	
+}
+
+var quizArray = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
 
 //Move to Answer Screen Function//////////////////////////////////////
 function answerScreen(){
